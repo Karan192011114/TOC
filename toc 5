@@ -1,0 +1,43 @@
+Automaton Simulator, v1.0
+dpda {
+	alphabet {abcd*}
+	state {
+		coord {297 343}
+	}
+	state {
+		coord {497 350}
+	}
+	state {
+		final {yes}
+		coord {688 350}
+	}
+	state {
+		initial {yes}
+		coord {117 340}
+	}
+	edge 0 1 {
+		transits {b}
+		offset {0.5235987755982988}
+		stacktop {a}
+		action {pop}
+	}
+	edge 1 0 {
+		transits {b}
+		offset {0.5235987755982988}
+		stacktop {a}
+	}
+	edge 1 2 {
+		transits {*c}
+		offset {0.5235987755982988}
+	}
+	edge 3 3 {
+		transits {a}
+		offset {2.356194490192345}
+		action {push a}
+	}
+	edge 3 0 {
+		transits {b}
+		offset {0.5235987755982988}
+		stacktop {a}
+	}
+}
